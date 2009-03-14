@@ -1,0 +1,10 @@
+ 
+Organización de Datos – Curso Servetto Evaluación Módulo Archivos Multimediales , 25 de febrero de 2009
+
+1) Describa la función que cumple la Matriz de Cunatificación en JPG. ¿Hay pérdida de información en este paso?
+
+2) ¿Para qué casos utilizaría un Buffer Circular antes que un Doble Buffer?
+
+3) ¿Cuáles son los límites de búsqueda en un cuadro B de MPEG?
+
+4) Explique la diferencia entre Imágenes Raster e Imágenes Vectoriales. ¿Para qué se utiliza cada una? Ejemplos.

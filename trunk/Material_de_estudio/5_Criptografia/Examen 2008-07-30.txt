@@ -1,0 +1,19 @@
+Organización de Datos – Curso Servetto
+Evaluación Módulo Criptografía, 30 de julio de 2008
+Resolver los ejercicios de Criptografía.
+
+1.- ¿Cuál es la principal debilidad de los métodos de cifrados por sustitución monoalfabéticos? ¿Cómo los criptoanalizaría de manera no trivial?
+
+2.- Si una persona firmó digitalmente un mensaje utilizando un esquema asimétrico, ¿qué debería hacer para repudiar la autoría del mensaje? Justificar
+
+3.- Responder Verdadero o Falso, justificando las respuestas "Falso": 
+a. Al aplicar tres veces la técnica de cifrado de transposición tomando en todos los casos bloques de longitud t y diferentes claves,
+    se obtiene un criptograma que se puede criptoanalizar en el mismo tiempo promedio que si aplicase la misma técnica una sola vez, 
+    también con bloques de longitud t.
+b. El esquema de firma digital simétrica garantiza la confidencialidad.
+c. En un esquema de firma digital simétrica, se puede engañar al Big Brother haciéndose pasar por otra persona,
+    pero el receptor del mensaje descubrirá el engaño en la firma del Big Brother.
+d. En un esquema de firma digital de clave privada, el emisor y el receptor de un mensaje deben compartir una clave que sólo ellos dos conozcan.
+e. Generalmente, aplicar un algoritmo asimétrico es más costoso en tiempo de procesamiento que aplicar un algoritmo simétrico. 
+f. En un ataque de intermediario sobre un intercambio que utiliza un esquema asimétrico, el intermediario no hace criptoanálisis.
+ 

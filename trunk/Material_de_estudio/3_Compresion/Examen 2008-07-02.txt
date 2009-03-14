@@ -1,0 +1,21 @@
+Organización de Datos – Curso Servetto
+Evaluación Compresión, 02 de Julio de 2008
+
+Sea el siguiente texto: mododomododomomo
+
+1. Comprimirlo con LZP de 2do Orden.
+2. Comprimirlo con LZ78 y mostrar la descompresión de lo obtenido.
+3. Comprimirlo con LZ77, utilizando ventanas de inspección y de
+memoria de tamaño 4.
+
+4. Responder Verdadero o Falso, justificando en las respuestas falsas:
+a. Si pretendo comprimir un texto en español utilizando half-coding,
+no haré que mejore la compresión si antes le aplico BS+MTF.
+b. La combinación Block Sorting + aritmético estático NO comprime
+mejor que si sólo se hubiese utilizado aritmético estático.
+c. No existe ninguna fuente tal que el compresor de huffman estático
+logre resultados óptimos (el nivel de compresión iguale a la
+entropía).
+d. Un método dinámico en promedio comprime menos que uno estático,
+pero es más rápido.
+ 

@@ -1,0 +1,15 @@
+ 
+Organización de Datos – Curso Servetto
+Evaluación Módulo Criptografía-Archivos Multimediales , 02 de julio de 2008
+Resolver los ejercicios de Criptografía y Multimediales en hoja separadas.
+
+
+1.Describa dos posibles tipos de buffers para la reproducción de un archivo multimedia e indique cuál de éstos 
+  es el más adecuado para una reproducción simultánea de video de dos clientes y una diferencia de tiempo de comienzo de 3 minutos.
+
+2.Indique los pasos del algoritmo JPEG en los que se pierde información de manera irrecuperable.
+
+3.A 1er cuat. 2008, B otros. Aclare el cuatrimestre de cursada en la hoja.
+a.	Analice la utilidad de aplicar un compresor tipo JPEG (con pérdida) a un archivo de Texto.
+b.	Realice un ejemplo de cuadros de Video consecutivos en los que sean útiles los vectores de movimiento de MPEG. 
+	Describa el algoritmo para armar el vector y qué datos tiene.

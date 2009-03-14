@@ -1,0 +1,14 @@
+Organización de Datos – Curso Servetto
+Evaluación Sistemas de Archivos, 30 de Julio de 2008
+
+1.Describa la estructura de Grupos de un Sistema de Archivos Unix (BSD-EXT) y detalle
+  la forma en que administra el espacio ocupado (cómo lo referencia, identifica y utiliza).
+
+2.Describa cómo se implementa el manejo de nombres largos en un directorio UNIX, 
+  cómo es la estructura del archivo y cómo se comporta con la eliminación de un archivo contenido en él.
+
+3.Describa las estructuras de datos de un registro de la MFT en un sistema NTFS y cómo direcciona los datos de un archivo.
+
+4.Utilizando una lista para referenciar los espacios libres de un sistema de archivos, cuyos nodos contienen 
+  referencias a más de un bloque. Describa un algoritmo (implementable) para evitar los continuos accesos a disco. No proponer solamente estructuras de datos del S.O.
+ 

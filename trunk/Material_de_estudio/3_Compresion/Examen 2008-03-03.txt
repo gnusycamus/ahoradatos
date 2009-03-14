@@ -1,0 +1,14 @@
+**Organización de Datos – Curso Servetto**
+
+Evaluación Módulo Compresión, 03 de 03 de 2008
+
+1)	Muestre la salida en BITS de la compresión del texto “pepe” con un algoritmo PPMC de O(1).
+
+2)	Describa un caso en el que un compresor Lz77 con tamaños de ventana de memoria e inspección de 4 y 5 lugares respectivamente y un acierto
+	mínimo de 3 sea peor que un compresor Aritmético de O(0).
+
+3)	Describa un archivo, de más de 10 caracteres, cuyos códigos generados por Huffman sean todos de longitud equivalente. ¿Puede generalizar 
+	una regla para obtener estos archivos?
+
+4)	Explique con un ejemplo el caso particular de Lz78 en el que al descomprimir se deba suponer el carácter último.
+ 

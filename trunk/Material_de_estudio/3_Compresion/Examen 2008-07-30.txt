@@ -1,0 +1,12 @@
+Organización de Datos – Curso Servetto
+Evaluación Compresión, 30 de Julio de 2008
+
+Para aprobar este examen, el ejercicio 1 NO puede estar mal.
+
+1.Aplique el algoritmo de compresión PPMC (orden 2) al siguiente texto (muestre el resultado total en tablas y lo que se 
+  guarda en disco al procesar los primeros cuatro caracteres – archivo definitivo en bits): RATAARATB
+
+2.Explique con qué criterio se elige el símbolo a reemplazar en el método del half coding. Utilizando half coding estático,
+  comprima el siguiente archivo: AAAAABCAAAAAABCAAAAAAAAAABB
+
+3.Descomprimir con LZ78 el siguiente archivo comprimido (los números entre paréntesis representan entradas en la tabla): X (256) (257) P (259) 

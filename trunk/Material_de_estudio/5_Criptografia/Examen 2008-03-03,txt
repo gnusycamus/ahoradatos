@@ -1,0 +1,18 @@
+**Organización de Datos – Curso Servetto**
+Evaluación Criptografía, 03 de 03 del 2007
+
+1.	Responder Verdadero o Falso, justificando en ambos casos la respuesta:
+
+a.	Si una clave tiene caracteres repetidos es imposible utilizarla en el método de transposición por columnas.
+
+b.	El cifrado por sustitución reemplaza símbolos del mensaje plano por otros símbolos pertenecientes al mismo alfabeto.
+
+c.	Una condición suficiente para que un criptosistema sea seguro es que el algoritmo de encriptación
+	sea extremadamente complejo o de alto nivel de seguridad.
+
+2.	Describa el tipo de algoritmos de cifrado Homofónico, características, debilidades, y de un ejemplo.
+
+3.	Describa el proceso de Firma Digital Simétrica. ¿Cumple con todos los principios de la Criptografía?
+
+4.	Cifrado por Flujo. ¿qué es? ¿qué utilidad y qué desventajas tiene contra los cifrados por bloque?
+ 

@@ -1,0 +1,13 @@
+Organización de Datos – Curso Servetto
+Evaluación Compresión, 23 de Julio de 2008
+
+1. Mostrar todos los pasos de la compresión de la cadena "PERRERA" utilizando aritmético estático de 8 bits de precisión,
+    indicando la tira de bits emitida (no incluir en la emisión la tabla de frecuencias).
+
+2. Tiene dos compresores, uno Lz77 y otro Huffman (dinámico o estático).
+a) Proponga un archivo que comprimido con el 1ro tiene mejores resultados que con el 2do.
+b) Proponga un archivo que comprimido con el 2do tiene mejores resultados que con el 1ro.
+c) Proponga un archivo que tiene resultados malos con ambos Justifique brevemente en todos los casos por qué se obtienen esos resultados.
+
+3. Dé ejemplos donde se aplique la exclusión de PPMC y explique los pasos de dicho algoritmo.
+ 

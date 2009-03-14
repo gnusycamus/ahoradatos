@@ -1,0 +1,12 @@
+**Organización de Datos – Curso Servetto**
+Evaluación de Multimedia, 03 de 03 de 2008
+
+1.	Indique una forma de implementar un Sistema de Archivos Multimedia (para archivos multimedia) basándose en uno existente.
+	Describa las modificaciones necesarias y su utilidad.
+
+2.	El algoritmo de compresión digital JPEG aplica en uno de sus pasos un algoritmo Run Length.
+	¿Cuándo es esto? ¿A qué se aplica? ¿Porqué es útil en este caso? 
+
+3.	Describa cómo se deben organizar los cuadros de una película MPEG para que al leerlos se puedan
+	reproducir sin tener que avanzar y retroceder en el archivo.
+ 

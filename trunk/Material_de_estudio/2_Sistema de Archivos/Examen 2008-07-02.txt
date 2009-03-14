@@ -1,0 +1,11 @@
+Organización de Datos – Curso Servetto
+Evaluación Sistemas de Archivos, 02 de Julio de 2008
+
+1.Describa las situaciones posibles en la búsqueda de datos en un Buffer Cache.
+
+2.Describa la estructura de un Archivo Directorio de un sistema Unix (BSD-EXT).
+  Muestre cómo se comporta en un Alta y en una Baja de un archivo contenido.
+
+3.Describa cómo se implementa el manejo de nombres largos en FAT32
+
+4.Analice un Sistema de Archivos de Bloques Contiguos. Ventajas y Desventajas respecto de otros.

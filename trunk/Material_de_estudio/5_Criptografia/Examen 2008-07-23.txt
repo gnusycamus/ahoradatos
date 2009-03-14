@@ -1,0 +1,12 @@
+Organización de Datos – Curso Servetto
+Evaluación Módulo Criptografía-Archivos Multimediales , 23 de julio de 2008
+Resolver los ejercicios de Criptografía y Multimediales en hoja separadas.
+
+1. ¿Qué es una función resumen? Explique su uso en criptografía y las características que debería cumplir para su aplicación.
+
+2. Explique qué significa que en un sistema de cifra asimétrica se obtengan la confidencialidad y la integridad por separado.
+
+3. Crear una clave para un cifrado homofónico a partir de la siguiente frase, que tiene todas las letras del alfabeto español: 
+    "Fabio me exige, sin tapujos, que añada cerveza al whisky". Considerar como alfabeto a las 27 letras del alfabeto español, 
+    obviando los espacios y signos de puntuación. Con esa clave, cifre esta frase: "Nosotros no somos como los Orozco"
+ 
