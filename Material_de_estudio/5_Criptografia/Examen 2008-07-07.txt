@@ -1,0 +1,15 @@
+Organización de Datos – Curso Servetto
+Evaluación Módulo Criptografía, 07 de julio de 2008
+Resolver los ejercicios de Criptografía.
+
+1.Explique brevemente los objetivos de la criptografía: confidencialidad, integridad, autentificación, no repudio. En los
+  sistemas asimétricos, ¿la integridad y la confidencialidad se logran por separado? Justifique brevemente.
+  La criptografía de clave pública, ¿dejó obsoleta a la criptografía de clave privada? Justifique brevemente.
+
+2. Desencripte el texto "JBRFPZMGAJ" con el cifrado de Hill, asumiendo que se usa el alfabeto inglés (26 caracteres)
+    sabiendo que la clave de encriptación fue una de las siguientes: [5, 1; 3, 6], [5, 2; 3, 6], [5, 3; 3, 6], [5, 4; 3, 6].
+    ¿Cómo puede darse cuenta cuál de las opciones es la clave verdadera?
+
+3. Enumere los pasos para generar las claves pública y privada del método RSA. ¿Cómo se encripta un mensaje con este método? 
+    ¿Por qué, para este método, es computacionalmente inviable calcular la clave privada a partir de la clave pública?
+ 

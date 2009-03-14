@@ -1,0 +1,12 @@
+Organización de Datos – Curso Servetto
+Evaluación Sistemas de Archivos, 23 de Julio de 2008
+
+1.Describa la estructura de Grupos de un Sistema de Archivos Unix (BSD-EXT) y detalle la forma 
+  en que administra el espacio de datos en cada uno de ellos.
+
+2.Describa cómo se implementa el manejo de nombres largos en FAT32
+
+3.Describa las estructuras de datos de un sistema NTFS que controlan los permisos de Usuarios.
+
+4.Describa la función de los sistemas de Registro de Operaciones (LOG) de un Sistema de Archivos.
+ 

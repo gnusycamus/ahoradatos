@@ -1,0 +1,16 @@
+**Organización de Datos – Curso Servetto**
+Evaluación Módulo FTRS, 03 de 03 de 2008
+
+	Número Documentos – Documento.
+  * 1.	“papo pepe”
+  * 60.	“epep ipop”                  Término = Palabra.
+  * 90.	“pipo epop”
+  * 100.	“apapep”
+
+
+1)	Elija la mejor codificación entre Delta, Gamma y Unaria para los valores que se guardarán en el índice invertido.
+
+2)	Resuelva con 2-Gramas la siguiente consulta: “ep*p”
+
+3)	Elija un Modelo de codificación Local y explique con él lo que se entiende por este concepto.
+ 
