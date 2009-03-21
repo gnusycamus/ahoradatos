@@ -2,8 +2,18 @@ package ar.com.datos.grupo5;
 
 import org.apache.log4j.Logger;
 
+/**
+ * Esta clase es de ejemplo.
+ */
 public class main {
 
+	/**
+	 * El constructor lo agrego para que checstyle no me rompa las bolas.
+	 */
+	public main() {
+		super();
+	}
+	
 	/**
 	 * Logger para la clase.
 	 */
@@ -24,7 +34,7 @@ public class main {
 		
 		/* TODO Ejemplo de tarea pendiente.
 		 * Este tipo de comentario se ve en la solapa "task",
-		 * es muy útil para no olvidarse de hacer las
+		 * es muy util para no olvidarse de hacer las
 		 * cosas que quedan colgadas.
 		 * */
 		
