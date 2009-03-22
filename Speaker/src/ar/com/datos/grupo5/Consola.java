@@ -4,14 +4,12 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import ar.com.datos.grupo5.interfaces.InterfazUsuario;
-
 /**
  * .
  * @author cristian
  *
  */
-public class Consola implements InterfazUsuario {
+public class Consola {
 
 	/**
 	 * Clase que implementa los metodos de la consola.
@@ -80,7 +78,6 @@ public class Consola implements InterfazUsuario {
 		int pos = 0;
 		Object[] params = null;
 		Class[] paramsClass = null;
-		String[] paramsAux = null;
 		String comando = "";
 		try {
 			
@@ -91,22 +88,18 @@ public class Consola implements InterfazUsuario {
 					
 					pos = linea.indexOf(" ");
 					if (pos > 0) {
-						paramsAux = linea.substring(pos + 1).split(" ");
-						params = new Object[paramsAux.length + 1];
+						params = linea.substring(pos + 1).split(" ");
 						params[0] = this;
-						for (int i = 0; i < paramsAux.length; i++) {
-							params[i + 1] = paramsAux[i];
-						}
 						paramsClass = new Class[params.length];
-						paramsClass[0] = InterfazUsuario.class;
-						for (int i = 1; i < params.length; i++) {
+						paramsClass[0] = this.getClass();
+						for (int i = 0; i < params.length; i++) {
 							paramsClass[i] = String.class;
 						}
 						comando = linea.substring(0, linea.indexOf(" "));
 					} else {
 						comando = linea.trim();
 						paramsClass = new Class[1];
-						paramsClass[0] = InterfazUsuario.class;
+						paramsClass[0] = this.getClass();
 						params = new Object[1];
 						params[0] = this;
 					}
