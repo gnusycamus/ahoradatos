@@ -78,18 +78,28 @@ public class Consola implements InterfazUsuario {
 		
 		String linea = "";
 		int pos = 0;
+		/*Parametros para el metodo que voy a invocar.
+		El primero es siempre de tipo interfaz "InterfazUsuario".
+		Los demas son siempre String.*/
 		Object[] params = null;
+		//Tipo de parametros.
 		Class[] paramsClass = null;
+		//Auxiliar para armar los parametros.
 		String[] paramsAux = null;
+		//El comando que voy a ejecutar.
 		String comando = "";
 		try {
 			
+			//Mientras no se ponga "FIN" o "fin".
 			do {
+				//Escrivo un promp
 				System.out.print("> ");
+				//Me quedo esperando por lo que ingrese el usuario.
 				linea = br.readLine();
 				try {
 					
 					pos = linea.indexOf(" ");
+					//Si es un comando con parametros.
                     if (pos > 0) {
                             paramsAux = linea.substring(pos + 1).split(" ");
                             params = new Object[paramsAux.length + 1];
@@ -103,7 +113,8 @@ public class Consola implements InterfazUsuario {
                                     paramsClass[i] = String.class;
                             }
                             comando = linea.substring(0, linea.indexOf(" "));
-                    } else {
+                            
+                    } else { //Si es un comando sin parametros.
                             comando = linea.trim();
                             paramsClass = new Class[1];
                             paramsClass[0] = InterfazUsuario.class;
@@ -112,16 +123,19 @@ public class Consola implements InterfazUsuario {
                     }
 
 					try {
-						Object resultado = 
-						invocador.getClass().getMethod(comando, paramsClass)
-							.invoke(invocador, (Object[]) params);
 						
+						//Intento llamar al metodo que pide el usuario.
+						Object resultado = 
+							invocador.getClass().getMethod(comando, paramsClass)
+								.invoke(invocador, params);
+						
+						//Escribo el resultado.
 						System.out.println("El resultado fue: " 
 								+ resultado.toString());
 						
 					} catch (Exception e) {
+						//Indico que no conozco el comando y espero por otro.
 						System.out.println("No se encuentra el comando solicitado: " + linea);
-						e.printStackTrace();
 					}
 					
 				} catch (Exception e) {
