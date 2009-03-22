@@ -23,18 +23,12 @@ public class Core {
 	public String DocumentoAParsear(String PathDocumento) {
 		// 0 => Ok, 1 => No se encontro
 		int EstadoArchivo = 0;
-		try {
-			/**
-			 * creamos el archivo a leer
-			 */
-			Documento = new File(PathDocumento);
-		} catch (FileNotFoundException e) {
-			// El archivo solicitado no se encuentra
-			System.out.println(" No se encontro el archivo en la ruta:"
-					+ PathDocumento + ". Es necesario crear un archivo.");
-		} catch (IOException e) {
-			// cachar excepcion
-		}
+
+		/**
+		 * creamos el archivo a leer
+		 */
+		Documento = new File(PathDocumento);
+
 		return "";
 	}
 
