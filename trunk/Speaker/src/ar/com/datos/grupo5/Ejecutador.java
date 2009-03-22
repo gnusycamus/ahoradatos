@@ -1,5 +1,7 @@
 package ar.com.datos.grupo5;
 
+import ar.com.datos.grupo5.interfaces.InterfazUsuario;
+
 /**
  * Clase que se crea desde la consola.
  * Por facilidad, hacer que todos los metodos invocados desde la consola
@@ -14,7 +16,7 @@ public class Ejecutador {
 	 * @param consola en este caso la consola para poder pedir datos y escribir.
 	 * @return texto con el resultado.
 	 */
-	public final String test(final Consola consola ) {
+	public final String test(final InterfazUsuario consola ) {
 		
 		System.out.println("Funciono la invocacion al metodo");
 		
@@ -33,7 +35,7 @@ public class Ejecutador {
 	 * @param b .
 	 * @return el resultado
 	 */
-	public final int suma(final Consola invocador, final String a, final String b) {
+	public final int suma(final InterfazUsuario invocador, final String a, final String b) {
 		
 		Integer aa = Integer.valueOf(a);
 		Integer bb = Integer.valueOf(b);
