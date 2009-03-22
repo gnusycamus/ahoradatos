@@ -9,6 +9,7 @@
 	<property name="dist"  location="./dist"/>
 	<property name="lib" location="./lib" />
 	<property name="res" location="./resources" />
+	<property name="doc" location="./doc" />
 
 	<target name="init">
 		<tstamp/>
@@ -28,7 +29,7 @@
 
 	<target name="dist" depends="compile" description="generate the distribution" >
 		<mkdir dir="${dist}"/>
-		
+
 		<copy todir="${build}">
 			<fileset dir="${lib}">
 				<include name="**/*" />
@@ -42,15 +43,15 @@
 			<fileset dir="${build}" includes="**" />
 			<manifest>
 				<attribute name="Main-Class" value="ar.com.datos.grupo5.main" />
-				<attribute name="Class-Path" value="log4j-1.2.15.jar"/> 
+				<attribute name="Class-Path" value="log4j-1.2.15.jar"/>
 			</manifest>
 		</jar>
-		
+
 	</target>
 
 	<target name="dist-mejor" depends="compile" description="generate the distribution" >
 		<mkdir dir="${dist}"/>
-		
+
 		<copy todir="${dist}">
 			<fileset dir="${lib}">
 				<include name="**/*.jar" />
@@ -69,12 +70,21 @@
 			<fileset dir="${build}" includes="**" />
 			<manifest>
 				<attribute name="Main-Class" value="ar.com.datos.grupo5.main" />
-				<attribute name="Class-Path" value="log4j-1.2.15.jar"/> 
+				<attribute name="Class-Path" value="log4j-1.2.15.jar"/>
 			</manifest>
 		</jar>
-		
+
 	</target>
-	
+
+	<target name="javadoc">
+		<javadoc access="public" destdir="${doc}" author="true" version="true" use="true" windowtitle="ar.com.datos">
+
+			<fileset dir="${src}" defaultexcludes="yes">
+				<include name="**/*.java" />
+			</fileset>
+		</javadoc>
+	</target>
+
 	<target name="clean" description="clean up">
 		<delete dir="${build}"/>
 		<delete dir="${dist}"/>

@@ -78,9 +78,10 @@ public class Consola {
 					try {
 						Object resultado = 
 						invocador.getClass().getMethod(comando, parametrosClass)
-							.invoke(invocador, (Object[])parametrosString);
+							.invoke(invocador, (Object[]) parametrosString);
 						
-						System.out.println("El resultado fue: " + resultado.toString());
+						System.out.println("El resultado fue: " 
+								+ resultado.toString());
 						
 					} catch (Exception e) {
 						System.out.println("No se encuentra el comando solicitado: " + linea);
