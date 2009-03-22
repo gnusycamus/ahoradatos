@@ -16,7 +16,7 @@ public class Ejecutador {
 	 * @param consola en este caso la consola para poder pedir datos y escribir.
 	 * @return texto con el resultado.
 	 */
-	public final String test(final InterfazUsuario consola ) {
+	public final String test(final InterfazUsuario consola) {
 		
 		System.out.println("Funciono la invocacion al metodo");
 		
