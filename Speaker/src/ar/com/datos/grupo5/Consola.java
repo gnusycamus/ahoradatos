@@ -4,12 +4,14 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
+import ar.com.datos.grupo5.interfaces.InterfazUsuario;
+
 /**
  * .
  * @author cristian
  *
  */
-public class Consola {
+public class Consola implements InterfazUsuario {
 
 	/**
 	 * Clase que implementa los metodos de la consola.
@@ -78,6 +80,7 @@ public class Consola {
 		int pos = 0;
 		Object[] params = null;
 		Class[] paramsClass = null;
+		String[] paramsAux = null;
 		String comando = "";
 		try {
 			
@@ -87,32 +90,27 @@ public class Consola {
 				try {
 					
 					pos = linea.indexOf(" ");
-					if (pos > 0) {
-						params = linea.substring(pos + 1).split(" ");
-						params[0] = this;
-						paramsClass = new Class[params.length];
-						paramsClass[0] = this.getClass();
-						for (int i = 0; i < params.length; i++) {
-							paramsClass[i] = String.class;
-						}
-						comando = linea.substring(0, linea.indexOf(" "));
-					} else {
-						comando = linea.trim();
-						paramsClass = new Class[1];
-						paramsClass[0] = this.getClass();
-						params = new Object[1];
-						params[0] = this;
-					}
-					
-					//Se puede hacer asi
-//					for (Method metodo : invocador.getClass().getMethods()) {
-//						
-//						if (linea.equals(metodo.getName().toString())) {
-//							metodo.invoke(invocador, new Object[0]);
-//						}
-//					}
-					
-					//O asi y atrapar la excepcion si no se encuentra el metodo.
+                    if (pos > 0) {
+                            paramsAux = linea.substring(pos + 1).split(" ");
+                            params = new Object[paramsAux.length + 1];
+                            params[0] = this;
+                            for (int i = 0; i < paramsAux.length; i++) {
+                                    params[i + 1] = paramsAux[i];
+                            }
+                            paramsClass = new Class[params.length];
+                            paramsClass[0] = InterfazUsuario.class;
+                            for (int i = 1; i < params.length; i++) {
+                                    paramsClass[i] = String.class;
+                            }
+                            comando = linea.substring(0, linea.indexOf(" "));
+                    } else {
+                            comando = linea.trim();
+                            paramsClass = new Class[1];
+                            paramsClass[0] = InterfazUsuario.class;
+                            params = new Object[1];
+                            params[0] = this;
+                    }
+
 					try {
 						Object resultado = 
 						invocador.getClass().getMethod(comando, paramsClass)
