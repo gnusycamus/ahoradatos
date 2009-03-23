@@ -76,7 +76,7 @@
 
 	</target>
 
-	<target name="javadoc">
+	<target name="javadoc" description="Javadoc">
 		<javadoc access="public" destdir="${doc}" author="true" version="true" use="true" windowtitle="ar.com.datos">
 
 			<fileset dir="${src}" defaultexcludes="yes">
